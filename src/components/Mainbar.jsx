@@ -9,7 +9,7 @@ function Primoblocco() {
             <div className='d-flex align-items-center'>
                 <h1 className='text-white'>TV Show</h1>
                 <Dropdown>
-                    <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                    <Dropdown.Toggle variant="dark" id="dropdown-basic" className='ms-3 border border-secondary'>
                         Generi
                     </Dropdown.Toggle>
                     <Dropdown.Menu>

@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function myNavbar() {
+function MyNavbar() {
     return (
         <Navbar expand="lg" className="bg-dark">
             <Container fluid>
@@ -42,4 +42,4 @@ function myNavbar() {
     );
 }
 
-export default myNavbar;
+export default MyNavbar;
