@@ -12,7 +12,7 @@ const FooterLink = ({ href, text }) => (
 
 function Footer() {
   return (
-    <footer className="bg-dark">
+    <footer className="bg-dark py-5">
       <Container>
         <Row>
           <Col md={4}>
