@@ -46,7 +46,7 @@ class ModalComp extends Component {
       const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg1OGM0OGI5ODkwODAwMTg0ODg3NGMiLCJpYXQiOjE3MDMyNTEwMTYsImV4cCI6MTcwNDQ2MDYxNn0.TB-26CMc7CFro3b2ohQR8fQE9FP9nAXd-5zof_thZdI";
 
       try {
-        // ho rimosso l'id dall'endpoint
+        // ho rimosso l'id
         const response = await fetch('https://striveschool-api.herokuapp.com/api/comments', {
           method: 'POST',
           headers: {
