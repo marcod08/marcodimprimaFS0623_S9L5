@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
-const API_KEY = '2c385d51';
-const BASE_URL = 'http://www.omdbapi.com/';
+const apiKEY = '2c385d51';
+const apiURL = 'http://www.omdbapi.com/';
 
-class TrendingNow extends Component {
+class Movies extends Component {
   constructor(props) {
     super(props);
     this.state = {
       movies: [],
     };
   }
-
+  
   componentDidMount() {
-    fetch(`${BASE_URL}?apikey=${API_KEY}&s=harry%20potter`)
+    const { ricerca } = this.props
+    
+    fetch(`${apiURL}?apikey=${apiKEY}&s=${ricerca}`)
       .then(response => response.json())
       .then(data => {
         if (data.Response === 'True') {
@@ -27,13 +29,14 @@ class TrendingNow extends Component {
 
   render() {
     const { movies } = this.state;
+    const { titolo } = this.props;
 
     return (
       <div className='bg-dark'>
       
           <Row>
             <Col md={2} className='text-white my-2'>
-              <h2>Trending Now</h2>
+              <h2>{titolo}</h2>
             </Col>
           </Row>
           <Row className='mx-2'>
@@ -45,10 +48,9 @@ class TrendingNow extends Component {
               </Col>
             ))}
           </Row>
-          
       </div>
     );
   }
 }
 
-export default TrendingNow;
+export default Movies;

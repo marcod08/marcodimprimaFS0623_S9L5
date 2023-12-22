@@ -15,7 +15,9 @@ function App() {
       </header>
       <main>
         <Mainbar />
-        <Movies />
+        <Movies titolo="Harry Potter" ricerca="harry%20potter" />
+        <Movies titolo="Star Wars" ricerca="star%20wars" />
+        <Movies titolo="Game of Thrones" ricerca="game%20thrones" />
       </main>
         <Footer />
     </div>
