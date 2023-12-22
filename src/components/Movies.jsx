@@ -53,7 +53,7 @@ class Movies extends Component {
           <Row className='mx-2'>
             {movies.map(movie => (
               <Col key={movie.imdbID} md={2} className="my-2">
-                <Card class='card' onClick={() => this.openModal(movie)}>
+                <Card className='card' onClick={() => this.openModal(movie)}>
                   <Card.Img variant="top" src={movie.Poster} alt={movie.Title} />
                 </Card>
               </Col>
